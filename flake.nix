@@ -17,7 +17,7 @@
       in {
         packages.default = pkgs.buildNpmPackage {
           pname = "gemini-cli";
-          version = "0.29.3";
+          version = "0.29.7";
 	  src = gemini-cli-src;
 
           npmDepsFetcherVersion = 2;
