@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     gemini-cli-src = {
-      url = "github:google-gemini/gemini-cli?ref=refs/tags/v0.37.2";
+      url = "github:google-gemini/gemini-cli?ref=refs/tags/v0.43.0";
       flake = false;
     };
   };
@@ -17,11 +17,11 @@
       in {
         packages.default = pkgs.buildNpmPackage {
           pname = "gemini-cli";
-          version = "0.37.2";
+          version = "0.43.0";
 	  src = gemini-cli-src;
 
           npmDepsFetcherVersion = 2;
-          npmDepsHash = "sha256-WkB0S+qZTf1bZRYLui+8Mv1eD5MOxYO/K2qdnqeG2Bc=";
+          npmDepsHash = "sha256-kz3S+EYAKYJtRAaHYsYHgsfAMxf4PZzDi4A6256FDLc=";
           nativeBuildInputs = with pkgs; [
             pkg-config
             python3
